@@ -7,4 +7,3 @@ for (let index = 0; index < num.length; index++) {
    res = res + num[index];
 }
 console.log(res);
-//!help mia
