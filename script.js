@@ -7,5 +7,6 @@ for (let index = 0; index < num.length; index++) {
    res += num[index];
 }
 console.log(res);
-console.log(res ** 3);
-console.log(res.substring(2));
+console.log(String((res ** 3)).slice(0,2));
+/* let pow = res ** 3;
+console.log(String(pow).substring(0,2)); */
