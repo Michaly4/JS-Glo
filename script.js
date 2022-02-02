@@ -1,9 +1,9 @@
 'use strict';
 
 let num = 266219;
-let numArray = num.toString().split("");
-console.log(numArray); 
 
+let numArray = num.toString().split('');
+console.log(numArray); 
 let res = 0;
 
 for (let i = 0; i < numArray.length; i++) {
