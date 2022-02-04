@@ -4,10 +4,10 @@ let num = 266219;
 
 let numArray = num.toString().split('');
 console.log(numArray); 
-let res = 0;
+let res = [];
 
 for (let i = 0; i < numArray.length; i++) {
-   res += numArray[i];
+   res *= numArray[i];
 }
 console.log(res);
 console.log(String((res ** 3)).slice(0,2));
