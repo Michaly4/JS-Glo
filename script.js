@@ -1,5 +1,5 @@
 'use strict';
-
+/*
 let num = 266219;
 
 let numArray = num.toString().split('');
@@ -11,6 +11,18 @@ for (let i = 0; i < numArray.length; i++) {
 }
 console.log(res);
 console.log(String((res ** 3)).slice(0,2));
+*/
+let title = " ";
+function getPruf(arg) {
+   if(arg !== ""){
+      console.log("fehler");
+   }
+   else if(arg == " "){
+      console.log(arg.trim());
+   }
+   
+}
+getPruf(title);
 
 
 
