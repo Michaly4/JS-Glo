@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 /*
 let num = 266219;
 
@@ -12,17 +12,22 @@ for (let i = 0; i < numArray.length; i++) {
 console.log(res);
 console.log(String((res ** 3)).slice(0,2));
 */
-let title = " ";
+
+//let title = "  Priwet  ";
+let title = "  0123456789112345678901234567890  ";
+console.log(title.length);
+
 function getPruf(arg) {
-   if(arg !== ""){
-      console.log("fehler");
+   if (arg !== "") {
+      arg = arg.substring(0, 30) + "...";
+      arg = arg.trim();
+      console.log(arg.length);
+      return arg;
+   } else {
+      return "string leer";
    }
-   else if(arg == " "){
-      console.log(arg.trim());
-   }
-   
 }
-getPruf(title);
+console.log(getPruf(title));
 
 
 
