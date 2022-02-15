@@ -1,19 +1,26 @@
-'use strict';
 
-let num = 266219;
+let week = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+let date = new Date();
+const day2 = document.getElementById('fordays');
+let day = date.getDay() -1;
 
-let numArray = num.toString().split('');
-console.log(numArray); 
-let res = [];
+week.forEach(function (item,i) {
+   let newdiv = document.createElement('div');
+   console.log(item,i);
+   if(i === day){
+      newdiv.classList.add('today');
+      newdiv.textContent = week[i];
+   }
+   if (item == "Saturday" || item == "Sunday") { // Если выходные то
+      newdiv.classList.add('italic'); // Делаем дополнительно курсивом (Даже если уже жирным выделено)
+      newdiv.textContent = week[i]; // Вставляем текст
+  } else{
+      newdiv.textContent = week[i]; // Если не текущий день и не выходные, то просто вставляем текст без стилей
+  }
+  day2.appendChild(newdiv);
+  
+});
 
-for (let i = 0; i < numArray.length; i++) {
-   res *= numArray[i];
-}
-console.log(res);
-console.log(String((res ** 3)).slice(0,2));
 
 
-
-
-/* let pow = res ** 3;
-console.log(String(pow).substring(0,2)); */
+//document.write(" Day: "+ week[date.getDay()] + "<br>");
