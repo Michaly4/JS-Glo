@@ -20,7 +20,3 @@ week.forEach(function (item,i) {
   day2.appendChild(newdiv);
   
 });
-
-
-
-//document.write(" Day: "+ week[date.getDay()] + "<br>");
