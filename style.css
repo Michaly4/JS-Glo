@@ -1,0 +1,86 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.controls {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+span {
+  height: 20px;
+  line-height: 20px;
+}
+
+button {
+  padding: 15px 40px;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: orange;
+  box-shadow: 0 3px 0 rgb(0 0 0 / 70%);
+  border: none;
+  position: relative;
+  top: 0;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+button:active {
+  top: 3px;
+  box-shadow: 0 1px 0;
+  color: white;
+}
+
+input[type=range] {
+  width: 200px;
+  cursor: pointer;
+}
+
+input[type=text] {
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: rebeccapurple;
+  font-weight: bold;
+  font-size: 20px;
+  transition: .3s;
+}
+
+a:hover {
+  color: red;
+}
+
+#square {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background-color: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.green {
+  background-color: green !important;
+}

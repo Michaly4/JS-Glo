@@ -1,19 +1,32 @@
 'use strict';
 
-let num = 266219;
+// *** variables ***
+const range = document.querySelector("#range");
+const e_btn = document.getElementById("e_btn");
+const btn = document.getElementById("btn");
+const rangeSpan = document.getElementById("range-span");
+const kvd = document.querySelector("#square");
+//const inpText = document.querySelector('input [type="text"]');
+const inpText = document.querySelector("#text")
+const pi = document.getElementById("circle");
 
-let numArray = num.toString().split('');
-console.log(numArray); 
-let res = [];
-
-for (let i = 0; i < numArray.length; i++) {
-   res *= numArray[i];
+//  *** function ***
+function click() {
+   let valueInp = inpText.value;
+   kvd.style.backgroundColor = `${valueInp}`;
+   inpText.value = "";
+   e_btn.style.display = "none";
+   // pi.style.display = "none";
 }
-console.log(res);
-console.log(String((res ** 3)).slice(0,2));
 
 
+function change() {
+   let rangeValue = range.value;
+   pi.style.width = `${rangeValue}%`;
+   pi.style.height = `${rangeValue}%`;
+   rangeSpan.textContent = rangeValue;
+}
 
-
-/* let pow = res ** 3;
-console.log(String(pow).substring(0,2)); */
+//  *** events ***
+btn.addEventListener('click', click);
+range.addEventListener('change', change);
